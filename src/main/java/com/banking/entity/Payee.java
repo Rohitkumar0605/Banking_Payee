@@ -22,13 +22,11 @@ public class Payee implements Serializable {
 	private String accountType;
 	private Long contactNumber;
 	private String actionMessage;
-	private Long otp;
-	
+
 	@ManyToOne
-	@JoinColumn(name="login_id")
+	@JoinColumn(name = "login_id")
 	private Login login;
-	
-	
+
 	public Long getPayeeId() {
 		return payeeId;
 	}
@@ -85,23 +83,15 @@ public class Payee implements Serializable {
 		this.actionMessage = actionMessage;
 	}
 
-	public Long getOtp() {
-		return otp;
-	}
-
-	public void setOtp(Long otp) {
-		this.otp = otp;
+	public Payee() {
+		super();
 	}
 
 	@Override
 	public String toString() {
 		return "Payee [payeeId=" + payeeId + ", payeeName=" + payeeName + ", branch=" + branch + ", accountNumber="
 				+ accountNumber + ", accountType=" + accountType + ", contactNumber=" + contactNumber
-				+ ", actionMessage=" + actionMessage + ", otp=" + otp + "]";
-	}
-
-	public Payee() {
-		super();
+				+ ", actionMessage=" + actionMessage + ", login=" + login + "]";
 	}
 
 }
