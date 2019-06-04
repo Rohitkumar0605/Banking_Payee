@@ -26,6 +26,7 @@ public interface BankingService {
 	ResponseEntity<String> validate(String otp);
 
 	String update(Long payeeId, Long accountNumber);
+
 	ResponseEntity<String> deletePayee(Long payeeId) throws Exception;
 
 }
