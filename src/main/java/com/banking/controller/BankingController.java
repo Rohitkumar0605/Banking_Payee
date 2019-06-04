@@ -34,7 +34,7 @@ public class BankingController {
 		return new ResponseEntity<Login>(login, HttpStatus.OK);
 	}
 
-	@GetMapping("/loginAccount/{userName}/{password}")
+	@GetMapping("/loginUser/{userName}/{password}")
 	public ResponseEntity<Login> validateLogin(@PathVariable String userName, @PathVariable String password) {
 		Login login = bankingService.validateLogin(userName, password);
 		return new ResponseEntity<Login>(login, HttpStatus.OK);
