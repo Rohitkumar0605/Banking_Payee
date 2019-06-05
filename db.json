@@ -1,0 +1,221 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "getIncidentType": [
+    {
+      "incidentType": "tytytytytytytytysssssssssssssssssss",
+      "severity": "P1"
+    },
+    {
+      "IncidentType": "Bsaaaaaaaaaaaaaaaaaa",
+      "severity": "P2"
+    },
+    {
+      "IncidentType": "Csaaaaaaaaaaaaaaaaaaaa",
+      "severity": "P3"
+    }
+  ],
+  "getAllUser": [
+    {
+      "userName": "A",
+      "severity": "P1"
+    },
+    {
+      "userName": "B",
+      "severity": "P2"
+    },
+    {
+      "userName": "C",
+      "severity": "P3"
+    }
+  ],
+  "profiles": [
+    "Michelina Ellers",
+    "Corrina Rosenblum",
+    "Allegra Mannings",
+    "Renae Pinedo",
+    "Becky Fang"
+  ],
+  "loginCredetails": {
+    "name": "suresh",
+    "password": "sureshshalini"
+  },
+  "users": [
+    {
+      "id": "12",
+      "username": "Suresh"
+    },
+    {
+      "id": "13",
+      "username": "Laxman"
+    },
+    {
+      "id": "14",
+      "username": "Jyoti"
+    },
+    {
+      "contact": "",
+      "incidentDescription": "",
+      "id": "L73YIi6"
+    },
+    {
+      "contact": "",
+      "incidentDescription": "",
+      "id": "NMsN13T"
+    },
+    {
+      "contact": "",
+      "incidentDescription": "",
+      "id": "Zmlq7i8"
+    }
+  ],
+  "tradeHistory": [
+    {
+      "tradeId": "1",
+      "stockname": "HCL",
+      "tradetype": "Buy",
+      "tradingtime": "6"
+    },
+    {
+      "tradeId": "2",
+      "stockname": "TCS",
+      "tradetype": "Buy",
+      "tradingtime": "6"
+    },
+    {
+      "tradeId": "6",
+      "stockname": "CTS",
+      "tradetype": "Buy",
+      "tradingtime": "6"
+    },
+    {
+      "tradeId": "5",
+      "stockname": "MindTree",
+      "tradetype": "Buy",
+      "tradingtime": "6"
+    },
+    {
+      "tradeId": "3",
+      "stockname": "TechM",
+      "tradetype": "Sell",
+      "tradingtime": "6"
+    }
+  ],
+  "purchased": [
+    {
+      "id": "1222",
+      "hounseno": "xyz1",
+      "streentNo": "12k",
+      "city": "6",
+      "state": "xyz1",
+      "country": "12k",
+      "zipcode": "6"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "12",
+      "city": "snmsn",
+      "state": "klklkl",
+      "country": "klkl",
+      "zipcode": "221201",
+      "id": "oeiR8Qj"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "asas",
+      "city": "ssdsd",
+      "state": "nmsnsdbn",
+      "country": "bnbn",
+      "zipcode": "221201",
+      "id": "Yt9E5Xn"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "ss",
+      "city": "ghgh",
+      "state": "ghgh",
+      "country": "gh",
+      "zipcode": "221201",
+      "id": "kr6z162"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "sss",
+      "city": "hghghgh",
+      "state": "sdsdh",
+      "country": "ss",
+      "zipcode": "121201",
+      "id": "ZcOfIv5"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "tffgfgfg",
+      "city": "fgfgfg",
+      "state": "asasas",
+      "country": "asasas",
+      "zipcode": "221201",
+      "id": "u7_4RhB"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "sasas",
+      "city": "jkjkjk",
+      "state": "jkjkjk",
+      "country": "jk",
+      "zipcode": "121201",
+      "id": "KPTFZSp"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "asas",
+      "city": "saas",
+      "state": "asas",
+      "country": "asas",
+      "zipcode": "221201",
+      "id": "O5jl1GD"
+    },
+    {
+      "hounseno": "12",
+      "streentNo": "qqq",
+      "city": "sdsdsdsd",
+      "state": "asasas",
+      "country": "sdasdsd",
+      "zipcode": "122414",
+      "id": "lz2JExn"
+    }
+  ],
+  "listProduct": [
+    {
+      "transactionId": "12",
+      "userId": "123",
+      "productId": "1234",
+      "productName": "Fridge",
+      "quantity": "12",
+      "price": "12.78",
+      "transactionDate": "12/06/2019"
+    },
+    {
+      "transactionId": "12",
+      "userId": "123",
+      "productId": "1234",
+      "productName": "Fridge",
+      "quantity": "12",
+      "price": "12.78",
+      "transactionDate": "12/06/2019"
+    },
+    {
+      "transactionId": "12",
+      "userId": "123",
+      "productId": "1234",
+      "productName": "Fridge",
+      "quantity": "12",
+      "price": "12.78",
+      "transactionDate": "12/06/2019"
+    }
+  ]
+}

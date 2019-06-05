@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>Polymer3-app test</title>
+
+    <script src="../../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../../node_modules/@polymer/test-fixture/test-fixture.js"></script>
+    <script src="../../node_modules/mocha/mocha.js"></script>
+    <script src="../../node_modules/chai/chai.js"></script>
+    <script src="../../node_modules/wct-mocha/wct-mocha.js"></script>
+
+    <script type="module" src="../../src/Polymer3-app/Polymer3-app.js"></script>
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <Polymer3-app></Polymer3-app>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="ChangedPropertyTestFixture">
+      <template>
+        <Polymer3-app prop1="new-prop1"></Polymer3-app>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="listPageTestFixture">
+      <template>
+        <dashboard-element dashPro="dashboard-loaded"></dashboard-element>
+      </template>
+    </test-fixture>
+
+
+    <script>
+      suite('Polymer3-app', function() {
+
+        test('instantiating the element with default properties works', function() {
+          let element = fixture('BasicTestFixture');
+          assert.equal(element.prop1, 'Polymer3-app');
+
+          var elementShadowRoot = element.shadowRoot;
+          var elementHeader = elementShadowRoot.querySelector('h2');
+          assert.equal(elementHeader.innerHTML, 'Hello Polymer3-app!');
+        });
+
+        test('setting a property on the element works', function() {
+          // Create a test fixture
+          var element = fixture('ChangedPropertyTestFixture');
+          assert.equal(element.prop1, 'new-prop1');
+          var elementShadowRoot = element.shadowRoot;
+          var elementHeader = elementShadowRoot.querySelector('h2');
+          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
+        });
+
+        //dashboard page unit test case
+        test('setting a property on the dashboard  element works', function() {
+          // Creating  a test fixture
+          let customElement = fixture('listPageTestFixture');
+          assert.equal(customElement.dashPro, 'dashboard-loaded---');
+        
+        });
+
+        test('fires lasers', function(done) {
+          myEl.addEventListener('seed-element-lasers', function(event) {
+            assert.equal(event.detail.sound, 'Pew pew!');
+            done();
+          });
+         myEl.fireLasers();
+});
+
+      });
+    </script>
+
+
+  </body>
+</html>
